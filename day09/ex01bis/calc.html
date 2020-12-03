@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex01</title>
+		<style></style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<form>
+			<input id="lMember" type="text" />
+			<select>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input id="rMember" type="text" />
+			<input type="submit" value="Try me!" />
+		</form>
+	</body>
+</html>
+<script>
+	function refresh() {
+		alert("Please, use me...");
+	}
+	setInterval(refresh, 30000);
+
+	$("document").ready(function() {
+		$("form").submit(calculator);
+	});
+
+	function calculator () {
+		var lValue = $("form").children("#lMember").val();
+		var op =  $("form").children("select").val();
+		var rValue =  $("form").children("#rMember").val();
+
+		if (!isInt(lValue) ||
+			!isInt(rValue) ||
+			parseInt(lValue, 10) < 0 ||
+			parseInt(rValue, 10) < 0 ) {
+			output("Error :(");
+		} else {
+			switch(op) {
+				case "+":
+					output(parseInt(lValue, 10) + parseInt(rValue, 10));
+					break;
+				case "-":
+					output(parseInt(lValue, 10) - parseInt(rValue, 10));
+					break;
+				case "*":
+					output(parseInt(lValue, 10) * parseInt(rValue, 10));
+					break;
+				case "/":
+					if (rValue == "0") {
+						output("It's over 9000!");
+					} else {
+						output(parseInt(lValue, 10) / parseInt(rValue, 10));
+					}
+					break;
+				case "%":
+					if (rValue == 0) {
+						output("It's over 9000!");
+					} else {
+						output(parseInt(lValue, 10) % parseInt(rValue, 10));
+					}
+					break;
+			}
+		}
+	}
+
+	function isInt (value) {
+		return !isNaN(value) &&
+				parseInt(Number(value)) == value &&
+				!isNaN(parseInt(value, 10));
+	}
+
+	function output(value) {
+		console.log(value);
+		alert(value);
+	}
+</script>

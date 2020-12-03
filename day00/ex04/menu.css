@@ -1,0 +1,45 @@
+html {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0 auto;
+	background-color: blanchedalmond;
+}
+nav {
+	margin-left: 35%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+nav ul {
+	list-style: none;
+	margin-top: 2%;
+}
+nav ul li {
+	border-radius: 5px;
+	background: #862020;
+	color: white;
+	width: 170px;
+	border: 1px solid black;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+nav ul li:hover{
+	background: crimson;
+}
+nav ul ul {
+	display: none;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul ul ul{
+	margin-left: 170px;
+	top: 0;
+	position: absolute;
+}

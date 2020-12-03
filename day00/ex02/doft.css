@@ -1,0 +1,166 @@
+BODY {
+	background-color:#505050;
+	width: 100%;
+	margin: auto;
+	position: relative;
+}
+.block {
+	background-color: #909091;
+	box-shadow: 10px 10px 10px black;
+	border-radius: 10px;
+}
+.top {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	margin-top: 1%;
+	padding: 1%;
+}
+#Day_of_the_42 {
+	display: inline-block;
+	width: 25%;
+}
+#loupe {
+	position: absolute;
+	width: 17%;
+	margin-top: -0.5%;
+	margin-left: 55%;;
+}
+#reload {
+	position: absolute;
+	width: 1.5%;
+	margin-top: -0.5%;
+	margin-left: 72%;
+
+}
+#close {
+	position: absolute;
+	width: 1.5%;
+	margin-left: 72%;
+	margin-top: 6%;
+}
+.central {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 57%;
+	height: auto;
+	margin-top: 9%;
+	padding: 0.5%;
+}
+#cluster {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.left {
+	position: absolute;
+	margin-top: 9%;
+	margin-left: 13.5%;
+	width: 6%;
+	height: auto;
+	padding: auto;
+	padding-bottom: 1%;
+}
+#move {
+	position: relative;
+	width: 65%;
+	height: 65%;
+	margin-top: 10%;
+	margin-left: 17.25%;
+}
+#take {
+	position: relative;
+	width: 65%;
+	height: 65%;
+	margin-top: 10%;
+	margin-left: 17.25%;
+}
+#look {
+	position: relative;
+	width: 65%;
+	height: 65%;
+	margin-top: 10%;
+	margin-left: 11%;
+	border: 5px solid red;
+	border-radius: 5px;
+}
+#use {
+	position: relative;
+	width: 65%;
+	height: 65%;
+	margin-top: 10%;
+	margin-left: 17.25%;
+}
+#speak {
+	position: relative;
+	width: 65%;
+	height: 65%;
+	margin-top: 10%;
+	margin-left: 17.25%;
+}
+.right {
+	position: absolute;
+	margin-top: 9%;
+	margin-left: 80.5%;
+	width: 6%;
+	height: auto;
+	padding: auto;
+	padding-bottom: 14%;
+}
+#book {
+	position: relative;
+	width: 65%;
+	height: 65%;
+	margin-top: 10%;
+	margin-left: 17.25%;
+}
+#tower {
+	position: relative;
+	width: 65%;
+	height: 65%;
+	margin-top: 10%;
+	margin-left: 17.25%;
+}
+#brick {
+	position: absolute;
+	background-image: url(resources/brick.jpg);
+	width: 90%;
+	height: 15%;
+	margin-top: 10%;
+	margin-left: 6%;
+}
+.box {
+	position: absolute;
+	background-color: #88ff89;
+	margin-top: 37.75%;
+	margin-left: 7%;
+	width: 29%;
+	height: 180px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	padding: 10px;
+	font-family: arial;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.box span.big {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 36px;
+	font-weight: 550;
+}
+.box span.shadow {
+	text-shadow: 5px 5px 5px black;
+}
+.box span.italic {
+	font-style: italic;
+}
+div p {
+	margin: 0;
+	padding: 0;
+}

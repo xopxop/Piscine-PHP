@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex01</title>
+		<style></style>
+	</head>
+	<body>
+		<form>
+			<input id="lMember" type="text" />
+			<select>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input id="rMember" type="text" />
+			<input type="submit" onclick="calculator()" value="Try me!" />
+		</form>
+	</body>
+</html>
+<script>
+	function refresh() {
+		alert("Please, use me...");
+	}
+	setInterval(refresh, 30000);
+
+	var form = document.forms[0];
+	function isInt (value) {
+		return !isNaN(value) &&
+				parseInt(Number(value)) == value &&
+				!isNaN(parseInt(value, 10));
+	}
+
+	function output(value) {
+		console.log(value);
+		alert(value);
+	}
+
+	function calculator () {
+		var lValue = form.elements[0].value;
+		var op = form.elements[1].value;
+		var rValue = form.elements[2].value;
+
+		if (!isInt(lValue) ||
+			!isInt(rValue) ||
+			parseInt(lValue, 10) < 0 ||
+			parseInt(rValue, 10) < 0 ) {
+			output("Error :(");
+		} else {
+			switch(op) {
+				case "+":
+					output(parseInt(lValue, 10) + parseInt(rValue, 10));
+					break;
+				case "-":
+					output(parseInt(lValue, 10) - parseInt(rValue, 10));
+					break;
+				case "*":
+					output(parseInt(lValue, 10) * parseInt(rValue, 10));
+					break;
+				case "/":
+					if (rValue == "0") {
+						output("It's over 9000!");
+					} else {
+						output(parseInt(lValue, 10) / parseInt(rValue, 10));
+					}
+					break;
+				case "%":
+					if (rValue == 0) {
+						output("It's over 9000!");
+					} else {
+						output(parseInt(lValue, 10) % parseInt(rValue, 10));
+					}
+					break;
+			}
+		}
+	}
+</script>

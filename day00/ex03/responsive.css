@@ -1,0 +1,90 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-color: #fefae1;
+}
+header > h1 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 4vw;
+}
+#content {
+	width: 100%;
+}
+#grid1 {
+	margin: 00px 0px 0px 0px;
+	display: grid;
+	gap: 2px;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(7, 4vw);
+}
+#grid2 {
+	margin: 40px 70px 40px 70px;
+	display: grid;
+	gap: 2px;
+	grid-template-columns: repeat(15, 1fr);
+	grid-template-rows: repeat(2, 4vw);
+}
+#picture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+.grid-item {
+	border-radius: 0.3vw;
+	font-size: 1vw;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	/* border: 1px solid black; */
+}
+.name {
+	display: block;
+	text-align: center;
+	font-size: 2vw;
+	font-weight: bold;
+	height: 70%;
+	margin: auto;
+	padding: 0;
+}
+.number {
+	display: inline;
+	float: left;
+}
+.weigth {
+	display: inline;
+	float: right;
+}
+.alkaliMetalColor {
+	background-color: #ecbe59;
+}
+.alkalineEarthMetalColor {
+	background-color: #dee955;
+}
+.lanthanoidColor {
+	background-color: #ec77a3;
+}
+.aktinoidColor {
+	background-color: #c686cc;
+}
+.transitionMetalColor {
+	background-color: #fd8572;
+}
+.postTransitionMetalColor {
+	background-color: #4cddf3;
+}
+.metalloidColor {
+	background-color: #3aefb6;
+}
+.otherNonmetalColor {
+	background-color: #52ee61;
+}
+.nobleGasColor {
+	background-color: #759fff;
+}
+.unknownColor {
+	background-color: #cccccc;
+}

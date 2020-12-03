@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex00</title>
+		<style>
+			#balloon {
+				background-color: red;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="balloon"></div>
+	</body>
+</html>
+<script>
+	const color = ["red", "green", "blue"];
+	var size = 200;
+	var colorIndex = 0;
+	var balloon = document.getElementById("balloon");
+	balloon.addEventListener("click", clickedOnBalloon, false);
+	balloon.addEventListener("mouseout", mouseLeavesBalloon, false);
+
+	function clickedOnBalloon() {
+		size += 10;
+		if (size > 420) {
+			size = 200;
+		}
+		colorIndex++;
+		if (colorIndex > 2) {
+			colorIndex = 0;
+		}
+		balloon.style.backgroundColor = color[colorIndex];
+		balloon.style.width = size + "px";
+		balloon.style.height = size + "px";
+	}
+
+	function mouseLeavesBalloon() {
+		size -= 5;
+		if (size < 200) {
+			size = 200;
+		}
+		colorIndex--;
+		if (colorIndex < 0) {
+			colorIndex = 2;
+		}
+		balloon.style.backgroundColor = color[colorIndex];
+		balloon.style.width = size + "px";
+		balloon.style.height = size + "px";
+	}
+</script>
