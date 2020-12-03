@@ -19,7 +19,7 @@
 
 ### Rush00:
 A mini-ecommerce online shop selling dirt cheap musical instrusments
-<i>feature:</i><br/>
+#### <i>feature:</i>
 ☑️ Data management. <br/>
 ☑️ User management. <br/>
 ☑️ A basket. <br/>
